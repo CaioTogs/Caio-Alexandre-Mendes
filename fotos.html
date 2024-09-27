@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos de Pratos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+        }
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            width: 250px;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .gallery-item strong {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 30px auto;
+            padding: 12px 30px;
+            background-color: #f8c471;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #f8c471;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+        }
+        .button-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fotos de nossos pratos</h1>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <strong>Strogonoff</strong>
+            <img src="https://blog.cybercook.com.br/wp-content/uploads/2023/04/strogonoff-de-frango-a-receita-que-tem-ate-palacio-proprio.jpg" alt="Prato de Strogonoff">
+        </div>
+        <div class="gallery-item">
+            <strong>Lasanha</strong>
+            <img src="https://guiadacozinha.com.br/wp-content/uploads/2019/11/receitas-lasanha.jpg" alt="Prato de Lasanha">
+        </div>
+        <div class="gallery-item">
+            <strong>Feijoada</strong>
+            <img src="https://www.ogastronomo.com.br/upload/705030785-descubra-os-diferentes-tipos-de-feijoada.jpg" alt="Prato de Feijoada">
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
+    </div> 
+    
+        
+</body>
+</html>
